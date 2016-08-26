@@ -1,0 +1,470 @@
+/* Global Layout Set-up */
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+ul
+{
+    list-style-type: none;
+}
+.main-heading {
+    overflow: hidden;
+    height: 400px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 80px;
+    background-color: #f2f1ef;
+}
+.info {
+    margin-top: 100px;
+}
+.tag {
+    font-family: 'Courgette', cursive;
+    background: #ceff99;
+    display: table;
+    margin: 0.7em auto;
+    padding: 0.3em;
+}
+.name {
+    margin-top: 30px;
+    color: #0099cc;
+    font-family: 'Indie Flower', cursive;
+}
+.location {
+    margin-top: 30px;
+    background: #ffffb3;
+}
+.avatar {
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    transition: all .5s;
+}
+.avatar:hover {
+    border-radius: 7px;
+}
+.navbar-font-logo {
+    font-family: 'Yellowtail', cursive;
+    font-size: 3em;
+}
+.navbar-font-menu {
+    font-size: 1.5em;
+}
+#mainNav {
+    background: #b3e0ff;
+}
+nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    transition: all .6s ease;
+}
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover,
+.navbar-default .hovered {
+    color: white;
+    transition: all .6s ease;
+}
+.active {
+    background: white;
+    transition: all .6s ease;
+}
+.navbar-default .navbar-nav .active:hover {
+    color: black;
+    background: white;
+}
+video {
+    display: block;
+}
+#bgvid {
+    position: relative;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    background-size: cover;
+}
+.stopfade {
+    opacity: .5;
+}
+.orian {
+    background: white;
+}
+.camera-mobile {
+    display: none;
+}
+.video-container {
+    width: 100%;
+    height: 100%;
+    max-height: 650px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: -100;
+}
+#contact {
+    background-color: #00aaff;
+    color: #fff;
+    padding-bottom: 40px;
+}
+#contact,
+.push {
+    /*pushes footer to bottom*/
+    
+    height: 200px;
+}
+.social-group {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+.copyright {
+    text-align: center;
+    font-size: .8em;
+    padding-top: 10px;
+}
+.photo-circle {
+    display: block;
+    border-radius: 100%;
+    width: 100px;
+    margin: 0 auto;
+    border: 3px solid #fff;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 15px;
+    fill: #fff;
+    transition: all .5s ease-in-out;
+}
+.icon:hover {
+    fill: #bbff99;
+}
+.copyright {
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: 20px;
+}
+.highlight-box {
+    background-color: #336699;
+    padding: 20px 10px 30px;
+    text-align: center;
+    color: white;
+    height: 400px;
+}
+.section-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+    color: #ffffb3;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.about-lead {
+    font-size: 1em;
+    width: 100%;
+    margin: auto;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: white;
+}
+.skills {
+    max-width: 800px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    background: white;
+    padding: 20px;
+   
+}
+
+.highlight-box>.skills {
+   margin-top: 30px;
+}
+
+.skills>a>img {
+    width: 50px;
+}
+.skills>a {
+    margin-left: 15px;
+}
+
+.skills>li>img {
+  width: 30px;
+  margin: 15px;
+}
+.grow {
+    transition: all .2s ease-in-out;
+}
+.grow:hover {
+    transform: scale(1.3);
+}
+#portfolio {
+    margin: 40px 0;
+}
+.main-heading>h2 {
+    font-size: 20px;
+}
+#portfolio h2 {
+    padding: 0 25px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 200;
+    line-height: 1.2;
+    color: #00bfff;
+}
+#portfolio p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.project-list {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 100%;
+    background: #ff6666;
+    transition: all .2s ease-in-out;
+}
+.project-list a {
+    text-align: center;
+    max-width: 75px;
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+.active-project {
+    transform: scale(1.3);
+}
+
+#some-element { display: none; }
+
+.project-preview {
+       margin: auto;
+    width: 80%;
+    padding: 20px;
+
+    }
+
+.project-preview>img {
+      display: block;
+    max-width: 100%;
+    height: auto;
+    }
+
+
+.project-links {
+  text-align: center;
+  width: 100%;
+}
+
+.project-details>h3 {
+      margin: auto;
+    width: 100%;
+    text-align: center;
+    font-weight: 200;
+    line-height: 1.2;
+    color: #666;
+        padding: 30px;
+}
+
+.project-details>p {
+    width: 100%;
+    font-weight: 100;
+    line-height: 1.5;
+    color: #222;
+}
+
+
+
+.project-details .btn-project-view {
+    background-image: url(../img/icon-www.svg);
+    padding-left: 45px;
+    background-position: 8px center;
+}
+
+.project-details .btn-project-github {
+    background-image: url(../img/icon-github.svg);
+    padding-left: 45px;
+    background-position: 8px center;
+}
+
+
+.project-details .btn-project-view, .project-details .btn-project-github {
+    display: inline-block;
+    margin: 0 10px 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 15px 6px 35px;
+    border-radius: 50px;
+    transition: all .5s ease-in-out;
+    color: #fff;
+    background-color: #b5b5b5;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+    background-size: 25px;
+}
+
+
+.project-details .btn-project-view:hover, .project-details .btn-project-github:hover {
+    color: #fff;
+    background-color: #0073e6;
+
+}
+
+
+@media(min-width: 768px) {
+  .project-list li {
+    width: 50px;
+    height: 50px;
+}
+
+#portfolio h2 {
+    font-size: 2.2em;
+}
+
+#portfolio p {
+    font-size: 16px;
+}
+
+.skills>li>img {
+    width: 40px;
+}
+
+.project-list a {
+    font-size: 14px;
+}
+
+.main-heading>h2 {
+    font-size: 30px;
+}
+
+.main-heading {
+    height: 450px;
+}
+}
+
+@media(min-width:1024px) {
+    .navbar-default {
+        -webkit-transition: all .35s;
+        -moz-transition: all .35s;
+        transition: all .35s;
+        padding: 15px 0;
+        /* Add additional styles here for the UNCOLLAPSED state */
+    }
+
+    #some-element { display: inline-block; }
+    .navbar-default.affix {
+        padding: 0;
+        /* Add additional styles here for the COLLAPSED state */
+    }
+    .camera-mobile {
+        display: block;
+    }
+    .main-heading {
+        background-color: transparent;
+        height: 650px;
+        padding-top: 150px;
+    }
+    .photo-circle {
+        width: 125px;
+    }
+    .highlight-box {
+        padding: 40px 10px 30px;
+        height: 400px;
+    }
+    .section-title {
+        font-size: 3em;
+    }
+    .about-lead {
+        font-size: 1.3em;
+        width: 80%;
+        margin: auto;
+    }
+    .skills>a>img {
+        width: 65px;
+    }
+    .skills {
+        max-width: 1000px;
+        
+    }
+    .highlight-box>.skills {
+       margin-top: 60px;
+    }
+    .skills>a {
+        margin-left: 30px;
+    }
+    #portfolio p {
+        font-size: 20px;
+    }
+    .project-list li {
+        margin-left: 30px;
+        width: 60px;
+        height: 60px;
+    }
+    #portfolio h2 {
+        font-size: 3em;
+    }
+    .project-list a {
+        font-size: 13px;
+    }
+    .icon {
+        width: 45px;
+        height: 45px;
+        margin: 0 15px;
+        transition: all .5s ease-in-out;
+    }
+    .name {
+        margin-top: 60px;
+    }
+    .location {
+        margin-top: 80px;
+        background: #ffffb3;
+    }
+    .main-heading>h2 {
+        font-size: 30px;
+    }
+
+    .project-preview {
+    margin: auto;
+    width: 50%;
+    margin-top: 30px;
+    }
+
+    .project-preview>img {
+    max-height: 300px;
+    margin: 0 auto;
+    }
+
+    .project-details>p {
+    width: 70%;
+}
+
+.skills>li>img {
+  width: 50px;
+}
+}
